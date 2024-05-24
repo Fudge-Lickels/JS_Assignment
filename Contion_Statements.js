@@ -14,6 +14,8 @@ function largerInt(num1,num2) { // varaiables have been declared in the function
 //let num2 = 80;
 //console.log("The lager number is ", largerInt(num1,num2));
 // num2 will be displayed since it has a bigger value.
+ 
+
 //let num1 = 100;
 //let num2 = 59;
 //console.log("The lager number is ", largerInt(num1,num2));
@@ -33,5 +35,5 @@ function oddOrEven(num0){
 }
 
 //example
-let num0 = 9;
-console.log("The given number", num0," is ", oddOrEven(num0));
+//let num0 = 9;
+//console.log("The given number", num0," is ", oddOrEven(num0));
