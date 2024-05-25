@@ -1,16 +1,16 @@
 
 
 function generateRandomNumber() { //returns a random integer between 1 and 100
-
+      if (generateRandomNumber === null){
+        alert("Game Canceled");
+        return null;
+        }else{
     return Math.floor(Math.random() * 100) + 1;
+      }
 } // is guessed by the player
 
 function getPlayerGuess() {
     let guess = parseInt(prompt("Guess a number between 1 and 100:"));
-     if (guess === null){
-        alert("Game Canceled");
-        return null;
-        }
     while (isNaN(guess) || guess < 1 || guess > 100) {
         guess = parseInt(prompt("Invalid input. Please enter a number between 1 and 100:"));
     }
