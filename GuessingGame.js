@@ -27,6 +27,10 @@ function checkGuess(playerGuess, correctNumber) { //two parameters - the player'
 
 function game() { // declarations 
     alert("Welcome to the Guessing game!")
+     if (guess === null){
+        alert("Game Canceled");
+        return null;
+        }
     let randomNumber = generateRandomNumber();
     let attempts = 0;
     let score = 100; 
@@ -41,10 +45,6 @@ function game() { // declarations
             alert("You have scored " + score + "points.");
             return; // prints the number of attempts and the score
         } 
-        else if (guess === null){
-        alert("Game Canceled");
-        return null;
-        }
         else {
           
             score -= 10; 
