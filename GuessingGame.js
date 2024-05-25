@@ -36,8 +36,8 @@ function game() {
         attempts++;
         let result = checkGuess(guess, randomNumber);
         alert(result);
-        if (result === "Well Done!") {
-            alert("Congratulations! You've guessed the correct number in " + attempts + " attempts!");
+        if (result === "Correct!") {
+            alert("Well Done! You've guessed the correct number in " + attempts + " attempts!");
             alert("You have scored " + score + "points.");
             return; // prints the number of attempts and the score
         } 
