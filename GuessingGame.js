@@ -10,10 +10,6 @@ function getPlayerGuess() {
     while (isNaN(guess) || guess < 1 || guess > 100) {
         guess = parseInt(prompt("Invalid input. Please enter a number between 1 and 100:"));
     }
-    if (guess === null){
-        alert("Game Canceled");
-        return null;
-    }
     return guess;
     
 } //prompts the user to enter a guess and returns the player's input as an integer
@@ -44,7 +40,12 @@ function game() { // declarations
             alert("Congratulations! You've guessed the correct number in " + attempts + " attempts!");
             alert("You have scored " + score + "points.");
             return; // prints the number of attempts and the score
-        } else {
+        } 
+        else if (guess === null){
+        alert("Game Canceled");
+        return null;
+        }
+        else {
           
             score -= 10; 
         }
