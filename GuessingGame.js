@@ -28,7 +28,9 @@ function game() { // declarations
     let randomNumber = generateRandomNumber();
     let attempts = 0;
     let score = 100; 
+ alert("Welcome to the Guessing game!" )
 
+  
     while (attempts < 10) { // loops the game upto 10 times unless correst answer is guessed
         let guess = getPlayerGuess();
         attempts++;
