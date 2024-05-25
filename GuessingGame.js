@@ -1,12 +1,7 @@
 
 
 function generateRandomNumber() { //returns a random integer between 1 and 100
-      if (generateRandomNumber === null){
-        alert("Game Canceled");
-        return null;
-        }else{
     return Math.floor(Math.random() * 100) + 1;
-      }
 } // is guessed by the player
 
 function getPlayerGuess() {
