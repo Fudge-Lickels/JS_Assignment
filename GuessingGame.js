@@ -7,6 +7,10 @@ function generateRandomNumber() { //returns a random integer between 1 and 100
 
 function getPlayerGuess() {
     let guess = parseInt(prompt("Guess a number between 1 and 100:"));
+     if (guess === null){
+        alert("Game Canceled");
+        return null;
+        }
     while (isNaN(guess) || guess < 1 || guess > 100) {
         guess = parseInt(prompt("Invalid input. Please enter a number between 1 and 100:"));
     }
@@ -25,12 +29,9 @@ function checkGuess(playerGuess, correctNumber) { //two parameters - the player'
     }
 }
 
-function game() { // declarations 
+function game() { 
     alert("Welcome to the Guessing game!")
-     if (guess === null){
-        alert("Game Canceled");
-        return null;
-        }
+    // declarations 
     let randomNumber = generateRandomNumber();
     let attempts = 0;
     let score = 100; 
